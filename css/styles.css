@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada|Open+Sans|Open+Sans+Condensed:300');
+
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Roboto');
+
+html,body{
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #873676;
+    height: 80px;
+    display: block;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 1px #c10fb5;
+    font-size: 3em;
+}
+
+h2{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 1px #c10fb5;
+    font-size: 2em;
+}
+
+p{
+    color: #FFF;
+    font-family: 'Crete Round', serif;
+}
+
+
+.header .container h1{
+    display: inline-flex;
+    margin-right: 110px;
+}
+
+.header .container a{
+    display: inline-flex;
+    color: #FFF;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin-right: 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 34px 0 13px 0;
+    
+}
+
+.header .container a:hover{
+    border-bottom: 3px solid #FFF;
+    
+}
+
+.main{
+    height: 830px;
+    background: url('https://image.ibb.co/eEJ3jv/flamingos_cutted.png') no-repeat center center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.main .container{
+    height: 830px;
+    text-align: center;
+}
+
+.main .container h1{
+    background-color: rgba(135, 54, 118, .7);
+    font-size: 4em;
+    font-family: 'Lemonada';
+    margin-top: 45%;
+}
+
+.presentation{
+    background-color: #000;
+    height: 512px;
+}
+
+.presentation .container h2{
+    font-size: 2.5em;
+}
+
+.container-presentation{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.presentation ul{
+    margin: 60px;
+    width: 700px;
+    float: right;
+    border: 2px solid #FFF;
+}
+
+.presentation ul li{
+    height: 320px;
+}
+
+.presentation .container-presentation .text-presentation{
+    position: absolute;
+    margin: 60px 0 0 100px;
+    width: 30%;
+}
+
+.presentation .container-presentation .text-presentation h2{
+    text-align: center;
+    line-height: 38px;
+}
+
+.presentation .container-presentation .text-presentation p{
+    margin-top: 60px;
+    font-size: 24px;    
+    text-indent: 0px;
+    font-family: 'Crete Round';
+    line-height: 30px;
+}
+
+
+/* RSlides código CSS */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
