@@ -9,3 +9,5 @@ https://ibb.co/mNRp1v
 https://ibb.co/fhy2Mv
 https://ibb.co/dvZnoa
 https://ibb.co/knqhMv
+
+https://s3.amazonaws.com/codecademy-content/projects/headlines/fb.svg (facebook logo)
