@@ -171,6 +171,11 @@ p{
     .container-presentation .text-presentation{
         max-width: 300px;
     }
+    
+    html, body{
+        max-width: 400 px;
+        
+    }
 }
 
 
