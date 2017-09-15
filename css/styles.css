@@ -162,6 +162,17 @@ p{
     width: 33%;
 }
 
+@media screen (max-width=500px){
+    .container-presentation{
+        max-width=500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-presentation .text-presentation{
+        max-width: 500px;
+    }
+}
+
 
 /* RSlides código CSS */
 
