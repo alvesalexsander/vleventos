@@ -196,7 +196,7 @@ p{
         
     .presentation ul{
         width: 100%;
-        float: clear;
+        clear: both;
         
     }
         
