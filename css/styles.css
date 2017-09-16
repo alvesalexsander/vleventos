@@ -162,20 +162,28 @@ p{
     width: 33%;
 }
 
-@media handheld{
+@media only screen and (max-device-width: 480px){
+    h1{
+        font-size: 2em;
+    }
+    
+    h2{
+        font-size: 1.6em;
+    }
+    
+    p{
+        font-size: 1em;
+    
     .container-presentation{
-        max-width: 300px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
+        
     .container-presentation .text-presentation{
-        max-width: 300px;
+        max-width: 400px;
     }
     
-    html, body{
-        max-width: 400 px;
-        
-    }
 }
 
 
