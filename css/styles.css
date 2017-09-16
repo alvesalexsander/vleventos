@@ -162,7 +162,7 @@ p{
     width: 33%;
 }
 
-@media only screen and (max-device-width: 480px){
+@media screen and (max-device-width: 480px){
     
     .main{
         width: 100%;
