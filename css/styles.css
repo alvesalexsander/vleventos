@@ -38,6 +38,9 @@ p{
     font-family: 'Crete Round', serif;
 }
 
+.header .container #menu-btn{
+    display: none;
+}
 
 .header .container h1{
     display: inline-flex;
