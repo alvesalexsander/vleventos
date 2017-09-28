@@ -171,6 +171,9 @@ p{
     .header .container a{
        display: none;
 }
+    .header .container .dropdown{
+        display: block;    
+}
 
     .main{
         height: 300px;
