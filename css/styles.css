@@ -38,7 +38,7 @@ p{
     font-family: 'Crete Round', serif;
 }
 
-.header .container .dropdown{
+.dropdown{
     display: none;
 }
 
@@ -163,6 +163,42 @@ p{
 }
 
 @media screen and (max-width: 480px){
+    
+.header .container .dropdown{
+    position: absolute;
+    display: inline-block;
+    top: 25px;
+    text-align: center;
+}
+
+.header .container .dropbtn{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+}
+
+.header .container .dropdown-content{
+    display: none;
+    text-align: center;
+}
+
+.show{
+    position: absolute;
+    display: block;
+    left: -15px;
+    background-color: #873676;
+    min-width: 480px;
+    text-align: center;
+}
+
+.dropdown-content a{
+    min-width: 100%;
+        text-align: center;
+}
+
+    .dropdown-content a p{
+        margin: 0 auto;
+    }
     
     .header .container h1{
       margin-right: 0px;
