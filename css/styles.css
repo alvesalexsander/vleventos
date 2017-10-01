@@ -187,13 +187,12 @@ p{
     display: block;
     left: -15px;
     background-color: #873676;
-    min-width: 480px;
+    min-width: 375px;
     text-align: center;
 }
 
 .dropdown-content a{
     min-width: 100%;
-        text-align: center;
 }
 
     .dropdown-content a p{
