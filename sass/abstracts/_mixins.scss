@@ -1,0 +1,22 @@
+@mixin clipPattern{
+    -webkit-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+    -moz-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+    -ms-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+    -o-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+}
+
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

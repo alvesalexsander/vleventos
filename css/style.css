@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  background-color: #873676;
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif; }
+
+.text-shadow {
+  text-shadow: 0.2rem 0.1rem #dc005a; }
+
+.header {
+  position: relative;
+  height: 6rem;
+  background-color: #873676;
+  z-index: 20;
+  max-width: 120rem;
+  margin: 0 auto; }
+  .header__title {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); }
+    .header__title h1 {
+      text-shadow: 0.2rem 0.1rem #505050;
+      font-size: 3rem; }
+  .header__links {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    left: 60%;
+    width: 60%; }
+    .header__links__item {
+      display: inline-block;
+      font-size: 1.5rem;
+      backface-visibility: hidden; }
+      .header__links__item a {
+        backface-visibility: hidden;
+        text-decoration: none;
+        color: white;
+        padding: 2rem 4rem;
+        margin: 0 1rem;
+        height: 100%;
+        transition: all .2s ease; }
+        .header__links__item a:hover {
+          border-bottom: .2rem solid white;
+          font-size: 1.7rem;
+          border-radius: 3px; }
+
+.hero {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 92vh;
+  -webkit-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -moz-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -ms-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -o-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%); }
+  .hero__home {
+    background-image: url(../../files/fotos-cutted/flamingos-cutted.jpg);
+    background-size: cover;
+    background-position: 20% 20%; }
+  .hero__festas {
+    background-image: url(../../files/fotos-cutted/galinha-cutted.jpg);
+    background-size: cover;
+    background-position: 20% 94%; }
+  .hero__blur {
+    background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.1), rgba(255, 255, 255, 0.1));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 15; }
+  .hero__text {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 40%; }
+    .hero__text__home {
+      background-color: rgba(183, 54, 101, 0.5); }
+    .hero__text__festas {
+      background-color: rgba(61, 106, 249, 0.5); }
+
+.presentation {
+  position: relative;
+  top: -7rem;
+  z-index: 0;
+  height: 110vh;
+  background-color: black;
+  -webkit-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -moz-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -ms-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  -o-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%); }
+  .presentation__title {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 5rem; }
+  .presentation__features {
+    margin: 0 auto;
+    position: relative;
+    top: 24rem;
+    max-width: 120rem;
+    height: 40rem; }
+    .presentation__features__item {
+      margin: 0 auto;
+      width: 80%;
+      height: 100%;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 3rem rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      background-image: linear-gradient(to top, rgba(135, 54, 118, 0.9), rgba(255, 255, 255, 0.3)); }
+      .presentation__features__item .icon {
+        font-size: 8rem;
+        padding: 5rem 3rem 2rem 3rem;
+        text-shadow: 0.2rem 0.1rem #dc005a;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px; }
+        .presentation__features__item .icon__child {
+          background-image: url(../../files/fotos-cutted/child-cutted.JPG);
+          background-size: cover;
+          height: 20rem; }
+        .presentation__features__item .icon__adults {
+          background-image: url(../../files/fotos-cutted/adults-cutted.jpg);
+          background-size: cover;
+          height: 20rem; }
+        .presentation__features__item .icon__decoration {
+          background-image: url(../../files/fotos-cutted/decoration-cutted.JPG);
+          background-size: cover;
+          height: 20rem; }
+      .presentation__features__item .text {
+        position: relative;
+        z-index: 10;
+        height: 55%;
+        font-size: 2rem;
+        padding: 4rem 4rem;
+        box-shadow: 0 0 10rem black; }
+
+.social {
+  position: relative;
+  top: -5rem;
+  text-align: center; }
+  .social__facebook__text {
+    font-size: 2rem;
+    color: white; }
+  .social__facebook__icon {
+    margin-top: 1rem; }
+    .social__facebook__icon .fb {
+      width: 4rem;
+      height: 4rem; }
+
+/*# sourceMappingURL=style.css.map */
