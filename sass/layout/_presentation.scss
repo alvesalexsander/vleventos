@@ -14,6 +14,9 @@
         text-align: center;
         color: white;
         font-size: 5rem;
+        opacity: 0;
+//        animation-name: title-show;
+        animation-duration: 3s;
         
     }
     
@@ -25,6 +28,7 @@
         height: 40rem;
         
         &__item{
+            position: relative;
             margin: 0 auto;
             width: 80%;
             height: 100%;
@@ -33,7 +37,10 @@
             box-shadow: 0 0 3rem rgba($white, .3);
             border-radius: 3px;
             background-image: linear-gradient(to top, rgba($main-pink, .9), rgba($white, .3));
-            
+            opacity: 0;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            @include clearfix;
             
             .icon{
                 font-size: 8rem;
@@ -76,4 +83,26 @@
         
     }
     
+}
+
+@keyframes title-show{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes item-show{
+    0%{
+        opacity: 0;
+        top: 20rem;
+    }
+    
+    100%{
+        opacity: 1;
+        top: 0rem;
+    }
 }

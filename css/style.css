@@ -106,7 +106,9 @@ body, html {
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 5rem; }
+    font-size: 5rem;
+    opacity: 0;
+    animation-duration: 3s; }
   .presentation__features {
     margin: 0 auto;
     position: relative;
@@ -114,6 +116,7 @@ body, html {
     max-width: 120rem;
     height: 40rem; }
     .presentation__features__item {
+      position: relative;
       margin: 0 auto;
       width: 80%;
       height: 100%;
@@ -121,7 +124,14 @@ body, html {
       color: white;
       box-shadow: 0 0 3rem rgba(255, 255, 255, 0.3);
       border-radius: 3px;
-      background-image: linear-gradient(to top, rgba(135, 54, 118, 0.9), rgba(255, 255, 255, 0.3)); }
+      background-image: linear-gradient(to top, rgba(135, 54, 118, 0.9), rgba(255, 255, 255, 0.3));
+      opacity: 0;
+      animation-duration: 2s;
+      animation-timing-function: ease; }
+      .presentation__features__item::after {
+        content: "";
+        display: table;
+        clear: both; }
       .presentation__features__item .icon {
         font-size: 8rem;
         padding: 5rem 3rem 2rem 3rem;
@@ -148,6 +158,18 @@ body, html {
         padding: 4rem 4rem;
         box-shadow: 0 0 10rem black; }
 
+@keyframes title-show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes item-show {
+  0% {
+    opacity: 0;
+    top: 20rem; }
+  100% {
+    opacity: 1;
+    top: 0rem; } }
 .social {
   position: relative;
   top: -5rem;
