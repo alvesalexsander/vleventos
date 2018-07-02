@@ -1,0 +1,108 @@
+.presentation{
+    position: relative;
+    top: -7rem;
+    z-index: 0;
+    height: 110vh;
+    background-color: black;
+    @include clipPattern;
+
+    
+    &__title{
+        position: absolute;
+        top: 10rem;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+        opacity: 0;
+//        animation-name: title-show;
+        animation-duration: 3s;
+        
+    }
+    
+    &__features{
+        margin: 0 auto;
+        position: relative;
+        top: 24rem;
+        max-width: 120rem;
+        height: 40rem;
+        
+        &__item{
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 3rem rgba($white, .3);
+            border-radius: 3px;
+            background-image: linear-gradient(to top, rgba($main-pink, .9), rgba($white, .3));
+            opacity: 0;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            @include clearfix;
+            
+            .icon{
+                font-size: 8rem;
+                padding: 5rem 3rem 2rem 3rem;
+                text-shadow: .2rem .1rem rgba(220, 0, 90, 1);
+                border-top-right-radius: 3px;
+                border-top-left-radius: 3px;
+                
+                &__child{
+                    background-image: url(../../files/fotos-cutted/child-cutted.JPG);
+                    background-size: cover;
+                    height: 20rem;
+                }
+                
+                &__adults{
+                    background-image: url(../../files/fotos-cutted/adults-cutted.jpg);
+                    background-size: cover;
+                    height: 20rem;
+                }
+                
+                &__decoration{
+                    background-image: url(../../files/fotos-cutted/decoration-cutted.JPG);
+                    background-size: cover;
+                    height: 20rem;
+                }
+                
+            }
+            
+            .text{
+                position: relative;
+                z-index: 10;
+                height: 55%;
+                font-size: 2rem;
+                padding: 4rem 4rem;
+                box-shadow: 0 0 10rem black;
+            }
+            
+        }
+        
+        
+    }
+    
+}
+
+@keyframes title-show{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes item-show{
+    0%{
+        opacity: 0;
+        top: 20rem;
+    }
+    
+    100%{
+        opacity: 1;
+        top: 0rem;
+    }
+}
