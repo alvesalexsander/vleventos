@@ -66,11 +66,11 @@ body, html {
   -o-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 95%, 0 90%); }
   .hero__home {
-    background-image: url(../../files/fotos-cutted/flamingos-cutted.jpg);
+    background-image: url(../files/fotos-cutted/flamingos-cutted.jpg);
     background-size: cover;
     background-position: 20% 20%; }
   .hero__festas {
-    background-image: url(../../files/fotos-cutted/galinha-cutted.jpg);
+    background-image: url(../files/fotos-cutted/galinha-cutted.jpg);
     background-size: cover;
     background-position: 20% 94%; }
   .hero__blur {
@@ -139,15 +139,15 @@ body, html {
         border-top-right-radius: 3px;
         border-top-left-radius: 3px; }
         .presentation__features__item .icon__child {
-          background-image: url(../../files/fotos-cutted/child-cutted.JPG);
+          background-image: url(../files/fotos-cutted/child-cutted.JPG);
           background-size: cover;
           height: 20rem; }
         .presentation__features__item .icon__adults {
-          background-image: url(../../files/fotos-cutted/adults-cutted.jpg);
+          background-image: url(../files/fotos-cutted/adults-cutted.jpg);
           background-size: cover;
           height: 20rem; }
         .presentation__features__item .icon__decoration {
-          background-image: url(../../files/fotos-cutted/decoration-cutted.JPG);
+          background-image: url(../files/fotos-cutted/decoration-cutted.JPG);
           background-size: cover;
           height: 20rem; }
       .presentation__features__item .text {
